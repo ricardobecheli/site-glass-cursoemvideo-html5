@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
+
+<!--    Tudo que estiver entre style e /style será a configuração CSS para essa página.-->
+
+<style>
+p {
+
+    text-align: justify;
+    text-indent: 50px;
+}
+
+
+</style>
+
 </head>
 
 
@@ -43,17 +56,80 @@
 </hgroup>
     
     <!--
-        AULA 7 ANTIGA: "<b> </b>" é bold e "<i> </i>" é itálilco, mas a maioria das formateções em html 5 é feita com o CSS.
+        AULA 7 ANTIGA:
+        
+        "<b> </b>" é bold e "<i> </i>" é itálilco, mas a maioria das formateções em html 5 é feita com o CSS.
         A tag <em> </em> também inclina, mas semanticamente diz ao navegador que você quer ênfase nessa palavra.
-        <u> = underline era do html4. E agora? Depreciada? Resposta:
-        CSS <span> style=... como abaixo, mas tem forma de não ter que escrever tudo isso a cada underline. Vai explicar mais sobre CSS.
+        
+        <u> = underline era do html4. E agora substituída pelo
+        CSS <span> style=...
+        como abaixo, mas tem forma de não ter que escrever tudo isso a cada underline. Vai explicar mais sobre CSS.
+
+        O style="font-weight" vai dar a quantidade de negrito. Pode ser "font-weight:normal", "font-weight:bold", "font-weight:bolder" ou um valor entre 100 e 900 depois dos dois pontos.
 
 
-        tag strike <s> deprê . Agora, tag <del>
+        A tag strike foi <s> depreciada (não mais usada no Html5) . Agora, usa-se a tag <del>.
+        Tudo exemplificado no parágrafo abaixo.
+
+        Tags também exemplificadas abaixo:
+        sup
+
+        ALINHAMENTO: antes, colocava-se p/ ex: <h2 align="center". Funciona, mas está depreciada no html5. Pode ser "left" ou "right", também.
+
+        Também justificar ou left ou right no  PARÁGRAFO.
+        Também indentação do paráfrafo.
+
+        <p style="text-align: justify; text-indent: 50px;">
+
+        Não precisa repetir isso em cada parágrafo.
+        
+        FAZER FORMATAÇÃO GLOBAL: Colocar a formatação na área HEAD.
+
+        Como mostrar trecho de código: usar tag code e /code. Ver exemplo antes do h2 abaixo:
+
+
     -->
+Exemplo de trecho de código (ver tags "code" e "pre"):
+<pre>
+    <code>
+    #include &lt; iostream&gt;
+    int main() {
+        count << "Olá, Mundo!";
+        return 0;
+    }
+</code>
+</pre>
+    <h2 align="center">O que é (sem style)</h2>
+    <h2 style="text-align:center">O que é (com style)</h2>
 
-    <h2>O que é</h2>
-    <p> <b>Google Glass</b>  é um <u>acessório</u>  em <span style="text-decoration: underline;">forma de óculos</span>  que possibi&shy;li&shy;ta a interação dos usuários com diversos conteúdos em realidade aumen&shy;tada. Também chamado de <i>Project Glass</i>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens ins&shy;tan&shy;tâneas e realizar vídeo<wbr/>con<wbr/>ferên<wbr/>cias. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. A&shy;tual&shy;mente o <em>Google Glass</em>  encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dis&shy;posi&shy;tivo. Além disso, a companhia de buscas registrou novas patentes <strong>anti-furto</strong>  e de desbloqueio de tela para o acessório.</p> 
+    <p> 
+        
+        <b>Google Glass</b>  é um <u>acessório</u> (underline com a tag "u") em <span style="text-decoration: underline;">forma de óculos</span> 
+        <strong>(underline com a tag "span style=", que em vez de underline pode ser "overline", "line-through", e outras, INCLUSIVE O "NONE", usado para anular formatações herdadas)</strong>  
+        
+        que possibi&shy;li&shy;ta a interação dos usuários com diversos conteúdos em realidade aumen&shy;tada. 
+
+        Também chamado de <i>Project Glass</i>, 
+
+        o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens 
+
+        ins&shy;tan&shy;tâneas e realizar 
+
+        vídeo<wbr/>con<wbr/>ferên<wbr/>cias. 
+
+        Seu <s>lançamento</s>  está <del>previsto</del> (as duas tags funcionam para tachar) 
+        
+        para 2014, e seu <sub>preço</sub>  deve ser de US$ 1,5 <sup>mil</sup> . 
+        
+        A&shy;tual&shy;mente o 
+        
+        <em>Google Glass</em>  encontra-se em fase de testes e já possui um vídeo totalmente gravado com o 
+        
+        dis&shy;posi&shy;tivo. Além disso, a companhia de buscas registrou novas patentes 
+        
+        <strong>anti-furto</strong>  e de desbloqueio de tela para o acessório.
+    
+    </p> 
 
     <!--
         AULA 6 ANTIGA - "<wbr/>" não mostra o hífen, só quebra a linha. É bom para URLs e e-mails.
@@ -67,6 +143,7 @@
    <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p> 
     
     <h1>Especificações Técnicas</h1>
+    <!--Aqui não tem indentação/justificação porque não é parágrafo, será uma tabela.-->
     Tabela Técnica do Google Glass Mar/2013
     
     Tela:Resolução equivalente a tela de 25"
@@ -79,7 +156,7 @@
     
     <h1>O que você pode fazer com o Google Glasses</h1>
     <!--
-        AULA 6 ANTIGA - "<wbr/>" quebra a palavra, se precisar. percebi que no html5 de 2020 não precisa mais da tab wbr pra quebrar palavra composta e certamente deve haver outras novidades desde 2013 - claro que farei o novo curso de html5 quando puder $ &nbsp;&nbsp&nbsp Repeti essa observação no texto do site (como chama o texto que vai aparecer no site, em comparação com o texto das observações do código?) -->
+        AULA 6 ANTIGA - "<wbr/>" quebra a palavra, se precisar. percebi que no html5 de 2020 não precisa mais da tab wbr pra quebrar palavra composta e certamente deve haver outras novidades desde 2013 - claro que farei o novo curso de html5 quando puder $ &nbsp;&nbsp&nbsp Repeti essa observação no texto do site (como chama o texto que vai aparecer no site, em comparação com o texto das observações do código? = O MDN chama de "conteúdo real" ou apenas "texto", em https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/HTML_basico) -->
     
     <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-humano” , já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
     
