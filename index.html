@@ -7,12 +7,15 @@
 
 <!--    Tudo que estiver entre style e /style será a configuração CSS para essa página.-->
 
-
 <!--
         AULA 8 início: CORES
         Os detalhes do que foi desativado no Html5 são interessantes, mas vou tentar resumir o importante:
         Tudo o que diz respeito a formatação e estilo e estiver fora de "style" e da área "head" é defasado. "O navegador obedece, por enquanto, mas um dia vai parar de reconhecer. Cuidado!"
-        Então, vamos abrir um parâmetro "body" dentro de "style" da área "head". (P.S.: quem já provou o licor Chartreuse sabe como essa cor é cheirosa kkk). O parâmetro "color" altera a cor das letras.
+        Então, vamos abrir um parâmetro "body" dentro de "style" da área "head".
+        
+        (P.S.: no início da aula selecionei a cor "chartreuse", mas depois do exercicio com FUNDO e CANAL ALFA abaixo, deixei a cor de fundo em "transparente" em vez de deletar a linha - só para deixar registrado o que foi dado na aula).
+        
+        O parâmetro "color" altera a cor das letras.
         Nem todos os mais de 16 milhões de cores possíveis aqui têm nome (como a tal de chartreuse), portanto dá pra escolher direto da paleta ou atribuir valores "RGB" ou atribuir valores hexadecimais ou valores "HSB". 
         Obs: Estou usando o editor Visual Studio Code (indicado pelo próprio Guanabara num dos cursos mais recentes (de JS) (estou em 2020, lembrando que o curso "antigo" de Html é de 2013), que tem ótimos recursos para escolha e definição de cores na ponta do mouse, sem precisar da ajuda de Gimp ou Photoshop para saber os valores RGB, Hexa, HSB, etc (se houver um etc).
 
@@ -25,24 +28,21 @@
         Logo após, usar a função url do CSS, como abaixo.
 
         CANAL ALFA = rgba = transparência
+        (também existe canal alfa no modo de cores "hsl", ou seja, "hsla")
         O valor alfa pode variar entre zero e um.
         Zero é tranparência total e um, opacidade total.
         Vou fazer no h1 pro efeito ficar mais visível.
-
-
-
     -->
 
 <style>
 
 body {
     background-image: url("fundo.jpg");
-    background-color: rgb(127, 255, 0);
+    background-color: transparent;
     color: rgb(0, 0, 0);
 }
 
 p {
-
     text-align: justify;
     text-indent: 50px;
 }
@@ -55,6 +55,7 @@ h1 {
 h2 {
     color: rgb(221, 25, 25);
 }
+
 </style>
 
 </head>
