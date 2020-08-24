@@ -1,20 +1,27 @@
 @charset "UTF-8";
 body {
-    background-image: url("fundo.jpg");
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-}
+        background-color: white;
+        color: rgba(0, 0, 0, 1);
+    }
 
 p {
     text-align: justify;
     text-indent: 50px;
 }
 
-h1 {
-    color: rgba(3, 3, 207, 0.4);
-    font-size: 50px;
-    }
 
-h2 {
-    color: rgb(221, 25, 25);
+/* É assim que se faz observação no CSS */
+
+
+/* Formatação de imagens com legendas. A primeira coisa a fazer é definir uma classe para a imagem (figure), que foi definido no arquivo INDEX. Sempre que se utilizar o PARÂMETRO class, coloca-se:     NOME DA TAG.(ponto)NOME DA CLASSE
+Esse é o padrão na linguagem CSS*/
+
+figure.foto-legenda {
+    border: 8px solid red;
 }
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+

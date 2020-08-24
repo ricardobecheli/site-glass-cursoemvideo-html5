@@ -34,7 +34,7 @@
         Vou fazer no h1 pro efeito ficar mais visível.
     -->
 
-<link rel="stylesheet" href="_css/estilo.css">
+<link rel="stylesheet" href="_css/estilo.css"/>
 
 </head>
 
@@ -77,7 +77,7 @@
     <!--
         AULA 7 ANTIGA:
         
-        "<b> </b>" é bold e "<i> </i>" é itálilco, mas a maioria das formateções em html 5 é feita com o CSS.
+        "<b> </b>" é bold e "<i> </i>" é itálilco, mas a maioria das formatações em html 5 é feita com o CSS.
         A tag <em> </em> também inclina, mas semanticamente diz ao navegador que você quer ênfase nessa palavra.
         
         <u> = underline era do html4. E agora substituída pelo
@@ -120,8 +120,8 @@ Exemplo de trecho de código (ver tags "code" e "pre"):
     }
 </code>
 </pre>
-    <h2 align="center">O que é (sem style)</h2>
-    <h2 style="text-align:center">O que é (com style)</h2>
+    
+    <h2 style="text-align:center">O que é</h2>
 
     <p> 
         
@@ -155,7 +155,7 @@ Exemplo de trecho de código (ver tags "code" e "pre"):
     <!--
         AULA 6 ANTIGA - "<wbr/>" não mostra o hífen, só quebra a linha. É bom para URLs e e-mails.
         Para mostrar o hífen tem que ser "&shy;"
-        No caso de ant-furto, já quebra sozinho.
+        No caso de anti-furto, já quebra sozinho.
     -->
     
     <!--
@@ -172,16 +172,18 @@ AULA 10 - INÍCIO DA ADMINISTRAÇÃO DE ESTILOS COM CSS.
 
 2) Deletar a parte de style do arquivo index (lilnhas 37 a 41) e, no seu lugar, criar uma TAG chamada "link", que vai gerar uma ligação (dãã) entre o arquivo HTML e o arquivo CSS.
 
+3) Definir uma CLASSE para "figure" (class="foto-legenda")
+
 
     -->
-    <figure>
+    <figure class="foto-legenda">
 
         <img src="_imagens/glass-quadro-homem-mulher.jpg"/>
 
-    <figcaption>
+        <figcaption>
         <h3>Google Glass</h3>
         <p>Uma nova maneira de ver o mundo.</p>
-    </figcaption>
+        </figcaption>
 
     </figure>
     
